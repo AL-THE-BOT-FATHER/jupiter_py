@@ -2,7 +2,7 @@ import json
 import time
 from typing import Optional, Union
 import requests
-from solana.transaction import Signature
+from solders.signature import Signature #type: ignore
 from config import RPC, client, payer_keypair
 
 def find_data(data: Union[dict, list], field: str) -> Optional[str]:
